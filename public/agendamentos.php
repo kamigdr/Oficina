@@ -41,7 +41,7 @@ if (isset($_GET['editar'])) {
     $id = $_GET['editar'];
     $res = mysqli_query($conn, "SELECT * FROM agendamento WHERE id_agendamento = $id");
     $edit = mysqli_fetch_assoc($res);
-    // Ajusta formato para o campo HTML datetime-local
+
     $edit['data_hora'] = date('Y-m-d\TH:i', strtotime($edit['data_hora']));
 }
 ?>

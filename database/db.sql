@@ -32,7 +32,7 @@ CREATE TABLE agendamento (
     FOREIGN KEY (id_mecanico) REFERENCES mecanico(id_mecanico)
 );
 
--- Senha de todos os usuários abaixo é: 123456
+-- Senha de todos os usuários abaixo é: password
 INSERT INTO usuario (nome, email, senha) VALUES 
 ('Atendente Ana', 'ana@oficina.com', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi'),
 ('Atendente Bruno', 'bruno@oficina.com', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi'),
